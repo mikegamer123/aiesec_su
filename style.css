@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif!important;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.navbar-brand {
+    width: 50px;
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0px !important;
+    background-color: #037ef3;
+    z-index: 999;
+    opacity: 0;
+    width: 100%;
+}
+
+.video-section {
+    position: relative;
+    overflow: hidden;
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.bounce-button {
+    z-index: 999;
+    width: 150px;
+    height: 50px;
+    background-color: #037ef3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity,background-color,color 1s ease-in-out;
+}
+
+.bounce-button.show {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with 60% opacity */
+    z-index: 0; /* Place the overlay behind other content */
+}
+
+.ekipa-img{
+    border: 5px solid #037ef3;
+    border-radius: 20px;
+}
+
+#section4 .content{
+    width: 85%;
+}
+
+.final{
+    color: black!important;
+}
+
+.final h2{
+    font-size: 1rem;
+}
+
+.final p {
+    font-size: 0.9rem;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.final .image-cont{
+    position: relative;
+}
+
+.final .image-cont img{
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    animation: pulsate 2s infinite;
+}
+
+.superImposed{
+    background-color: #037ef3;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    animation: opacityChange 2s infinite;
+}
+
+.final hr{
+    color: #037ef3;
+    opacity: 0.7;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.final .detail-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: none;
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Text color on top of the video */
+    text-align: center;
+}
+
+.landing h2 {
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+.landing h2:nth-child(2n+1) {
+    text-align: left
+}
+
+/* Apply different styles to every second child */
+.landing h2:nth-child(2n) {
+    text-align: right
+}
+
+.aiesec-bold {
+    color: #037ef3;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #037ef3; /* Background color of the loading screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+    z-index: 9999; /* Make sure the loading screen is on top */
+}
+
+.loading-icon {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: pulsate 1s infinite alternate;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.who-are {
+    font-size: 1.2rem!important;
+}
+.who-are-2 h2{
+    font-size: 1.2rem!important;
+    padding: 10px;
+}
+
+#section3{
+    background-color: #037ef3;
+}
+
+.accordion-button, .accordion-button::after{
+    color: white!important;
+    background-color: #037ef3!important;
+}
+
+#accordionFlushExample {
+    max-width: 100%;
+    transition: max-width 0.3s ease-in-out;
+}
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'%3E%3C/path%3E%3C/svg%3E")!important;
+}
+.accordion-body{
+    font-size: 1rem;
+}
+
+.power-to-us .card-body{
+    color:black;
+}
+.power-to-us .card{
+    display: flex;
+    align-items: center;
+    border: 2px #037ef3 solid;
+    border-radius: 20px;
+    margin: 10px 0px;
+}
+.power-to-us .card-img-top{
+    width:50px;
+    margin-top: 10px;
+}
+.power-to-us h2{
+    font-size: 1.0rem;
+}
+.power-to-us .card h2{
+    font-size: 0.8rem;
+}
+.power-to-us p{
+    font-size: 0.8rem;
+}
+
+#section6{
+    background-color: #037ef3;
+}
+
+.sign-up h2{
+    font-size: 1.2rem;
+}
+.sign-up a{
+    color: white;
+}
+.siteLink{
+    margin-top: 20px;
+    background-color: white!important;
+    color:#037ef3!important;
+    text-decoration: none!important;
+    font-weight: bolder!important;
+    font-size: 1.2rem!important;
+}
+
+.history h2{
+    margin: 10px;
+    font-size: 1rem;
+    color:black;
+}
+
+.history h2:nth-child(2n+1) {
+    text-align: left
+}
+
+/* Apply different styles to every second child */
+.history h2:nth-child(2n) {
+    text-align: right
+}
+
+.history h2:first-child{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.videos h2:first-child{
+    font-size: 1.2rem;
+}
+
+.videos h2{
+    font-size: 1.0rem;
+    color:black;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    right: -20%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")!important;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    left: -20%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")!important;
+}
+
+@media (max-height: 730px) {
+    .power-to-us .card{
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .power-to-us .card-body{
+        padding: 5px;
+    }
+    .who-are{
+        font-size: 0.9rem!important;
+    }
+    .who-are .spec-img{
+        width: 80px!important;
+    }
+    .who-are img{
+        width: 50px!important;
+    }
+}
+@media (max-width: 380px) {
+    .carousel-control-next, .carousel-control-prev
+    {
+        display: none!important;
+    }
+}
+
+@media (min-width: 600px) {
+  .ekipa-img{
+      width: 400px!important;
+  }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1); /* Initial size */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up */
+    }
+    100% {
+        transform: scale(1); /* Return to original size */
+    }
+}
+
+@keyframes opacityChange {
+    0% {
+        opacity: 0.9; /* Initial opacity */
+    }
+    50% {
+        opacity: 0.5; /* Change opacity */
+    }
+    100% {
+        opacity: 0.9; /* Return to original opacity */
+    }
+}

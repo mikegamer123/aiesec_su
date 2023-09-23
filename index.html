@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>AIESEC Subotica</title>
+    <link href="./style.css" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+          id="generate-fonts-css"
+          media="all"
+          rel="stylesheet" type="text/css">
+    <script crossorigin="anonymous"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<main>
+    <div class="loading-screen">
+        <div class="loading-icon"></div>
+    </div>
+    <nav class="navbar shadow px-2  navbar-dark">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" width="50%"/></a>
+        <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section2">Ko smo mi</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section3">Naša misija</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section4">Sektori</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section5">Benefiti</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section6">Prakse u inostranstvu</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section7">Istorija Subotice</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section8">Ekipa iz AIESEC u Subotici</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section9">Naši Alumni članovi</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#section10">Prijavi se!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="section" id="section1">
+        <video autoplay id="video-bg" loop muted playsinline>
+            <source src="https://fatless.condevweb.com/assets/img/aiesec.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content landing">
+            <h2><span class="aiesec-bold">AIESEC</span> je najveća studentska organizacija na svetu!</h2>
+            <h2>Koja je nastala 1948 nakon II svetskog rata, kada su mladi iz sedam država zapadne Evrope odlučili da
+                učine sve što je moguće da se ovakvi konflikti više ne dešavaju u svetu.</h2>
+            <h2><span class="aiesec-bold">AIESEC U SRBIJI</span> je osnovan 1953. godine kao <span class="aiesec-bold">AIESEC</span>
+                u Jugoslaviji.</h2>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="content text-black who-are">
+            <h2 class="mb-4">Ko smo <span class="aiesec-bold">mi?</span></h2>
+            <div class="d-flex flex-column justify-content-around">
+                <div class="d-flex flex-column align-items-center">
+                    <img class="spec-img" src="https://aiesec.org.rs/wp-content/uploads/2018/08/members-about.png"
+                         width="100px"/>
+                    <p class="mt-2 mb-1 aiesec-bold">30,743+</p>
+                    <p>Članova u celom svetu</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="https://aiesec.org.rs/wp-content/uploads/2018/08/world-about.png" width="50px"/>
+                    <p class="mt-2 mb-1 aiesec-bold">120+</p>
+                    <p>Postojimo više u od 120 zemalja</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="https://aiesec.org.rs/wp-content/uploads/2018/08/corporate-about.png" width="50px"/>
+                    <p class="mt-2 mb-1 aiesec-bold">7,962+</p>
+                    <p>Partnerskih organizacija</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="https://aiesec.org.rs/wp-content/uploads/2018/08/alumni-about.png" width="50px"/>
+                    <p class="mt-2 mb-1 aiesec-bold">1,000,000+</p>
+                    <p>Alumni članova</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="content who-are-2">
+            <h2 class="text-white">
+                Mi smo pokret mladih.
+            </h2>
+            <h2>
+                Pokreće nas jedan cilj, a to je mir i ispunjenje ljudskog potencijala.
+            </h2>
+            <h2>
+                AIESEC je globalna mreža ljudi koji jednostavno veruju da liderstvo u 21. veku nije opcija.
+            </h2>
+            <h2>
+                Već odgovornost svih nas.
+            </h2>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="content text-black">
+            <h2 class="mb-5">Sektori u <span class="aiesec-bold">AIESEC</span> organizaciji</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button aria-controls="flush-collapseOne" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseOne" data-bs-toggle="collapse"
+                                type="button">
+                            Dolazeće stručne prakse
+                        </button>
+                    </h2>
+                    <div aria-labelledby="flush-headingOne" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseOne">
+                        <div class="accordion-body">
+                            Ovaj sektor se bavi organizacijom stručnih praksi za mlade ljude iz drugih zemalja koji
+                            dolaze da steknu radno iskustvo u struci. Ovde se radi na pronalaženju partnera, povezivanju
+                            mladih talenata s lokalnim kompanijama i pružanju podrške praktikantima tokom njihovog
+                            boravka.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button aria-controls="flush-collapseTwo" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseTwo" data-bs-toggle="collapse"
+                                type="button">
+                            Dolazeće volonterske prakse
+                        </button>
+                    </h2>
+                    <div aria-labelledby="flush-headingTwo" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseTwo">
+                        <div class="accordion-body">
+                            Ovaj sektor se bavi organizacijom volonterskih praksi za mlade iz inostranstva. Volonteri
+                            obično rade na različitim projektima i inicijativama u zajednici, doprinoseći društvenom
+                            uticaju i razmeni kultura.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button aria-controls="flush-collapseThree" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseThree" data-bs-toggle="collapse"
+                                type="button">
+                            Odlazeće prakse
+                        </button>
+                    </h2>
+                    <div aria-labelledby="flush-headingThree" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample" id="flush-collapseThree">
+                        <div class="accordion-body">Ovaj sektor se fokusira na prodaju, pripremu i podršku mladima koji
+                            žele
+                            otići u inostranstvo kako bi stekli iskustvo rada ili učestvovali u razmeni. Ovdje se radi
+                            na pronalaženju partnera u drugim zemljama, prodaji, upoznavanju i pripremi mladih za
+                            putovanje i pružanju
+                            informacija o dostupnim praksama.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headinFour">
+                        <button aria-controls="flush-collapseFour" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseFour" data-bs-toggle="collapse"
+                                type="button">
+                            Marketing
+                        </button>
+                    </h2>
+                    <div aria-labelledby="flush-headinFour" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample" id="flush-collapseFour">
+                        <div class="accordion-body">Marketing sektor odgovoran je za promociju AIESEC organizacije,
+                            njenih programa i vrednosti. Ovaj sektor se bavi kreiranjem marketinških kampanja,
+                            upravljanjem društvenim medijima, organizacijom događaja i komunikacijom s ciljnom publikom
+                            kako bi se privuklo više mladih ljudi da se uključe u AIESEC aktivnosti.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div class="content power-to-us">
+            <h2 class="aiesec-bold px-3 mb-3">Pored profesionalnog unapređenja imaš mogućnost da:</h2>
+            <div class="card mx-5">
+                <img alt="Card image cap" class="card-img-top" src="img/card2.png">
+                <div class="card-body">
+                    <h2 class="aiesec-bold">Osnažiš druge:</h2>
+                    <p class="card-text">Pravi lider se uvek trudi da ljude oko sebe osnaži i pruži im podršku u svemu
+                        što rade.</p>
+                </div>
+            </div>
+            <div class="card mx-5">
+                <img alt="Card image cap" class="card-img-top" src="img/card1.png">
+                <div class="card-body">
+                    <h2 class="aiesec-bold">Budeš okrenut/a ka rešenjima:</h2>
+                    <p class="card-text">Na fakultetu, poslu i generalno životu, mislimo da je važno da uvek težiš
+                        pronalasku najboljih rešenja.</p>
+                </div>
+            </div>
+            <div class="card mx-5">
+                <img alt="Card image cap" class="card-img-top" src="img/card3.png">
+                <div class="card-body">
+                    <h2 class="aiesec-bold">Baš ti budeš stanovnik sveta:</h2>
+                    <p class="card-text">Potrebno je da budeš upoznat/a sa onim što se dešava u svetu, jer ti događaji
+                        mogu uticati i na zemlju u kojoj ti živiš.</p>
+                </div>
+            </div>
+            <!--            <div class="card mx-5">-->
+            <!--                <img alt="Card image cap" class="card-img-top" src="img/card4.png">-->
+            <!--                <div class="card-body">-->
+            <!--                    <h2 class="aiesec-bold">Imaš samosvesnost:</h2>-->
+            <!--                    <p class="card-text">Samo ako si svestan/a svojih snaga i slabosti ćeš moći da radiš na njima i-->
+            <!--                        napreduješ.</p>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </div>
+    <div class="section" id="section6">
+        <div class="content sign-up mx-3">
+            <h2 class="mb-5">Ako ipak nisi zainteresovan da budeš član..</h2>
+            <h2 class="mb-5">Prijavi se na naše <a href="https://aiesec.org/search" target="_blank">super prakse</a>!
+            </h2>
+            <h2><a href="https://auth.aiesec.org/users/sign_in?country=Serbia#signup" target="_blank">Popuni prijavu</a>
+                na
+                sajtu kako bi mogao više da saznaš o našim praksama!</h2>
+            <a class="btn siteLink" href="https://aiesec.org/" target="_blank">Pogledaj naš sajt!</a>
+        </div>
+    </div>
+    <div class="section" id="section7">
+        <div class="content history">
+            <h2 class="mb-5">Istorija <span class="aiesec-bold">AIESEC</span> u Subotici</h2>
+            <h2 class="mt-3"><span class="aiesec-bold">AIESEC u Subotici</span> postoji od 1961. godine što ga čini
+                drugom najstarijom lokalnom kancelarijom u Srbiji.</h2>
+            <h2 class="mt-5"><span class="aiesec-bold">Subotica</span> je tada otvorila i AIESEC kancelariju u Novom
+                Sadu i na taj način proširila uticaj na mlade u drugom gradu.</h2>
+            <h2 class="mt-5">Godine 2010. AIESEC u Subotici je osvojio nagradu za <span class="aiesec-bold">najviše dolazećih praksi</span>
+                na nivou Srbije.</h2>
+        </div>
+    </div>
+    <div class="section" id="section8">
+        <div class="content history">
+            <h2 class="mb-2">Ekipa iz <span class="aiesec-bold">AIESEC</span> u Subotici te pozdravlja!</h2>
+            <img class="ekipa-img" src="img/ekipa.jpg" width="70%"/>
+        </div>
+    </div>
+    <div class="section" id="section9">
+        <div class="content videos">
+            <h2>Sad malo da čujete nešto i od naših <span class="aiesec-bold">Alumnija</span>:</h2>
+            <div class="carousel slide" data-bs-ride="carousel" id="video-carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body">
+                                <iframe allowfullscreen frameborder="0" height="315"
+                                        src="https://www.youtube.com/embed/1u-74sc4IIs" width="100%"></iframe>
+                                <h2>Ime Alumnija</h2>
+                                <h2>Pozicija</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <iframe allowfullscreen frameborder="0" height="315"
+                                        src="https://www.youtube.com/embed/1u-74sc4IIs" width="100%"></iframe>
+                                <h2>Ime Drugog Alumnija</h2>
+                                <h2>Druga Pozicija</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" data-bs-slide="prev" href="#video-carousel" role="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" data-bs-slide="next" href="#video-carousel" role="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section10">
+        <div class="content final">
+            <h2 class="mb-5">Postani i ti deo <span class="aiesec-bold">najveće studentske organizacije</span>!</h2>
+            <div class="row mx-2">
+                <div class="detail-cont col-6">
+                    <p>Nikolina Molnar</p>
+                    <hr>
+                    <p>Potpredsednica za ljudske resurse</p>
+                    <hr>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>: <a href="mailto:nikolina.molnar@aiesec.net">nikolina.molnar@aiesec.net</a></p>
+                    <hr>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>: <a href="tel:0629608375">062/960-83-75</a></p>
+                    <hr>
+                </div>
+                <div class="image-cont col-6">
+                    <div class="superImposed"></div>
+                    <img width="80%" src="img/nina.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="bounce-button text-uppercase">Prijavi se</button>
+</main>
+<script>
+    $(document).ready(function () {
+        $('#video-carousel').carousel();
+        let section3AnimationPlayed = false;
+        let section7AnimationPlayed = false;
+        // Select the loading screen and loading icon using jQuery
+        const $loadingScreen = $('.loading-screen');
+        const $content = $('.content');
+
+        gsap.to($loadingScreen, {
+            opacity: 0,
+            duration: 2,
+            ease: 'power1.inOut',
+            onComplete: function () {
+                // Remove the loading screen from the DOM after animation completion
+                $loadingScreen.remove();
+                $content.show();
+                afterLoad();
+            }
+        });
+
+        function afterLoad() {
+            // Select the button element using jQuery
+            const $button = $('.bounce-button');
+
+            // Select the <h2> elements
+            const $h2First = $('.landing h2:nth-child(1)');
+            const $h2Second = $('.landing h2:nth-child(2)');
+            const $h2Third = $('.landing h2:nth-child(3)');
+
+            // Initial position of the button
+            const initialY = $button.position().top;
+
+            // Create a GSAP timeline for the button animation
+            const buttonAnimation = gsap.timeline();
+
+            // Function to animate the button back to its initial position
+            function animateBack() {
+                buttonAnimation.fromTo($button, {y: '100%', opacity: 0}, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: 'bounce.out'
+                });
+            }
+
+            // Add animations to the button timeline
+            buttonAnimation.fromTo($button, {y: '100%', opacity: 0}, {
+                y: initialY - 50,
+                opacity: 1,
+                duration: 2,
+                ease: 'bounce.out'
+            });
+
+            // Create a GSAP timeline for the <h2> animations
+            const h2Animation = gsap.timeline();
+
+            // Slide in the <h2> elements
+            h2Animation
+                .fromTo($h2First, {x: '-100%', opacity: 0}, {x: 0, opacity: 1, duration: 1, ease: 'power2.out'})
+                .fromTo($h2Second, {x: '100%', opacity: 0}, {x: 0, opacity: 1, duration: 1, ease: 'power2.out'})
+                .fromTo($h2Third, {x: '-100%', opacity: 0}, {x: 0, opacity: 1, duration: 1, ease: 'power2.out'});
+
+            // Make the button visible and start its animation
+            $button.addClass('show');
+            animateBack();
+            // Bounce down animation for the navbar
+            buttonAnimation.fromTo('.navbar', {y: '-100%'}, {
+                y: '0', opacity: 1, duration: 1, ease: 'bounce.out',
+                onComplete: function () {
+                    addScroll();
+                }
+            });
+        }
+
+        function addScroll() {
+            const sections = document.querySelectorAll('.section');
+            let currentSectionIndex = 0;
+            let touchStartY = null;
+
+            function animateSection2Content() {
+                const section2Content = document.querySelector('#section2 .content');
+                if (section2Content) {
+                    const tl = gsap.timeline();
+                    tl.fromTo(
+                        section2Content,
+                        {y: '20%', opacity: 0},
+                        {y: 0, opacity: 1, duration: 1.5, ease: 'bounce.out'}
+                    );
+
+                    // Play the animation
+                    tl.play();
+                }
+            }
+
+            function animateSectionContentBounce(sectionNum) {
+                const section2Content = document.querySelector('#section' + sectionNum + ' .content'); // Replace with your selector
+                if (section2Content) {
+                    const tl = gsap.timeline();
+                    tl.fromTo(
+                        section2Content,
+                        {y: '40%', opacity: 0},
+                        {y: 0, opacity: 1, duration: 1.5, ease: 'bounce.out'}
+                    );
+
+                    // Play the animation
+                    tl.play();
+                }
+            }
+
+
+            function animateSection3Content() {
+                // Select all h2 elements within Section 3
+                const section3H2Elements = document.querySelectorAll('#section3 h2');
+
+                // Create a GSAP timeline for the animation
+                const tl = gsap.timeline();
+
+                // Add the animation to the timeline for each h2 element
+                section3H2Elements.forEach((element, index) => {
+                    tl.fromTo(
+                        element,
+                        {opacity: 0, y: 20},
+                        {opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: index * 0.5}
+                    );
+                });
+
+                // Play the animation
+                tl.play();
+                section3AnimationPlayed = true;
+            }
+
+            function animateSection7Content() {
+                // Select all h2 elements within Section 3
+                const section7H2Elements = document.querySelectorAll('#section7 h2');
+
+                // Create a GSAP timeline for the animation
+                const tl = gsap.timeline();
+
+                // Add the animation to the timeline for each h2 element
+                section7H2Elements.forEach((element, index) => {
+                    tl.fromTo(
+                        element,
+                        {opacity: 0, y: 20},
+                        {opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: index === 0 ? 0.8 : index * 0.3}
+                    );
+                });
+
+                // Play the animation
+                tl.play();
+                section7AnimationPlayed = true;
+            }
+
+            function animateSection5Cards() {
+                // Select all the cards in Section 5
+                const section5Cards = document.querySelectorAll('#section5 .card');
+
+                // Create a GSAP timeline for the animation
+                const tl = gsap.timeline();
+
+                // Add the animation to the timeline for each card
+                section5Cards.forEach((card, index) => {
+                    tl.fromTo(
+                        card,
+                        {scale: 0.8, opacity: 0},
+                        {scale: 1, opacity: 1, duration: 0.8, ease: 'power2.out', delay: index === 0 ? 1 : index * 0.2}
+                    );
+                });
+
+                // Play the animation
+                tl.play();
+            }
+
+
+            function scrollToSection(index) {
+                $(".bounce-button").css("background-color", "#037ef3");
+                $(".bounce-button").css("color", "white");
+                if (index >= 0 && index < sections.length) {
+                    sections[index].scrollIntoView({behavior: 'smooth'});
+                    currentSectionIndex = index;
+
+                    switch (currentSectionIndex) {
+                        case 1:
+                            animateSection2Content();
+                            break;
+
+                        case 2:
+                            $(".bounce-button").css("background-color", "white");
+                            $(".bounce-button").css("color", "black");
+                            if (!section3AnimationPlayed) animateSection3Content();
+                            break;
+
+                        case 3:
+                            animateSectionContentBounce(4);
+                            break;
+
+                        case 4:
+                            animateSection5Cards();
+                            break;
+
+                        case 5:
+                            $(".bounce-button").css("background-color", "white");
+                            $(".bounce-button").css("color", "black");
+                            animateSectionContentBounce(6);
+                            break;
+
+                        case 6:
+                            if (!section7AnimationPlayed) animateSection7Content();
+                            break;
+
+                        case 7:
+                            animateSectionContentBounce(8);
+                            break;
+
+                        case 8:
+                            animateSectionContentBounce(9);
+                            break;
+
+                        case 9:
+                            animateSectionContentBounce(10);
+                            break;
+                    }
+                }
+            }
+
+            window.addEventListener('wheel', (event) => {
+                if (event.deltaY > 0) {
+                    scrollToSection(currentSectionIndex + 1);
+                } else if (event.deltaY < 0) {
+                    scrollToSection(currentSectionIndex - 1);
+                }
+            });
+
+            window.addEventListener('touchstart', (event) => {
+                touchStartY = event.touches[0].clientY;
+            });
+
+            window.addEventListener('touchend', (event) => {
+                if (touchStartY === null) return;
+
+                const touchEndY = event.changedTouches[0].clientY;
+                const deltaY = touchEndY - touchStartY;
+
+                if (deltaY > 50) {
+                    scrollToSection(currentSectionIndex - 1);
+                } else if (deltaY < -50) {
+                    scrollToSection(currentSectionIndex + 1);
+                }
+
+                touchStartY = null;
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'ArrowDown') {
+                    scrollToSection(currentSectionIndex + 1);
+                } else if (event.key === 'ArrowUp') {
+                    scrollToSection(currentSectionIndex - 1);
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>
