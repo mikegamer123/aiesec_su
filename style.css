@@ -63,6 +63,21 @@ body {
     transition: opacity,background-color,color 1s ease-in-out;
 }
 
+.upArrow{
+    display: none;
+    left: 20%;
+    width: 30px;
+}
+
+.downArrow{
+    left: 80.5%;
+    width: 30px;
+}
+
+.upArrow:hover, .downArrow:hover {
+    animation: bounce 1s;
+}
+
 .bounce-button.show {
     opacity: 1;
 }
@@ -328,10 +343,57 @@ body {
         width: 50px!important;
     }
 }
+
+@media (max-height: 630px) {
+    .power-to-us .card{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .power-to-us h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 0.8rem;
+    }
+    .who-are .spec-img{
+        width: 70px!important;
+    }
+    .who-are img{
+        width: 40px!important;
+    }
+    .bounce-button{
+        height: 30px;
+    }
+    .accordion-body {
+        font-size: 0.8rem;
+    }
+    #section4 h2{
+        font-size: 1.0rem;
+        margin-bottom: 10px!important;
+    }
+    .videos h2{
+        font-size: 1.0rem!important;
+    }
+}
+
+@media (max-height: 610px) {
+    .navbar-brand {
+        width: 30px;
+    }
+    .navbar-toggler{
+        font-size: 13px!important;
+    }
+    .navbar{
+        padding: 0px!important;
+    }
+}
+
 @media (max-width: 380px) {
     .carousel-control-next, .carousel-control-prev
     {
         display: none!important;
+    }
+    .final p{
+        font-size: 0.75rem!important;
     }
 }
 

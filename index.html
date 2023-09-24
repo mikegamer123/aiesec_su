@@ -335,9 +335,28 @@
         </div>
     </div>
     <button class="bounce-button text-uppercase">Prijavi se</button>
+    <button class="bounce-button downArrow"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+    <button class="bounce-button upArrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 </main>
 <script>
     $(document).ready(function () {
+
+        function bounceElement(element) {
+            gsap.to(element, {
+                y: -20,
+                ease: "power2.inOut",
+                duration: 0.25,
+                onComplete: function() {
+                    gsap.to(element, {
+                        y: 0,
+                        ease: "bounce.out",
+                        duration: 0.5,
+                    });
+                },
+            });
+        }
+
+
         $('#video-carousel').carousel();
         let section3AnimationPlayed = false;
         let section7AnimationPlayed = false;
@@ -431,6 +450,16 @@
                 }
             }
 
+            $(".upArrow").click(function() {
+                bounceElement(this);
+                scrollToSection(currentSectionIndex - 1);
+            });
+
+            $(".downArrow").click(function() {
+                bounceElement(this);
+                scrollToSection(currentSectionIndex + 1);
+            });
+
             function animateSectionContentBounce(sectionNum) {
                 const section2Content = document.querySelector('#section' + sectionNum + ' .content'); // Replace with your selector
                 if (section2Content) {
@@ -513,6 +542,10 @@
             function scrollToSection(index) {
                 $(".bounce-button").css("background-color", "#037ef3");
                 $(".bounce-button").css("color", "white");
+                $(".upArrow").hide();
+                $(".downArrow").hide();
+                if(index != 0) $(".upArrow").show();
+                if(index != 9) $(".downArrow").show();
                 if (index >= 0 && index < sections.length) {
                     sections[index].scrollIntoView({behavior: 'smooth'});
                     currentSectionIndex = index;
